@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <title>InfoKosWearnes</title>
+   
+
+  </head>
+  <body> 
+  
+    <div class="container-fluid">
+      <div class="row mt-5">
+        <div class="col"> 
+        <button id="tombol" class="btn btn-danger btn-block ">
+           <i class="fas fa-search-location"></i>
+          TAMPIL DATA
+        </button>   
+
+            <div id="wadah" class="card border-danger mb-3 mt-2" style="display: none;">
+              <div class="card-header text-center badge-dark">
+                <h4>Data Kos Sekitar Kampus Wearnes Malang</h4>
+              </div>
+              <div class="card-body text-danger">
+              <table id="datakos" class="table table-striped table-bordered ">
+              <thead class="bg-danger text-light text-center">
+                <tr >
+                  <th scope="col">No</th>
+                  <th scope="col">Nama Kos</th>
+                  <th scope="col">Alamat Kos</th>
+                  <th scope="col">No Telp</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Kos Bunda</td>
+                  <td>Jl.Jakarta No.2 Malang</td>
+                  <td>087454664544</td>
+                 
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Kos Bunga</td>
+                  <td>Jl.Jakarta No.2 Malang</td>
+                  <td>081234445654</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Kos Dewa</td>
+                  <td>Jl.Jakarta No.2 Malang</td>
+                  <td>083543321123</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Kos Dedy</td>
+                  <td>Jl.Jakarta No.2 Malang</td>
+                  <td>082543321323</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Kos Ria</td>
+                  <td>Jl.Jakarta No.2 Malang</td>
+                  <td>085432321333</td>
+                </tr>
+              </tbody>
+              </table>
+              </div>            
+            </div>
+           </div>          
+        </div>       
+      </div>
+      
+   
+
+ 
+    <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/jquery.dataTables.min.js"></script>
+    <script src="bootstrap/js/dataTables.bootstrap4.min.js"></script>
+
+    <script>
+    $(document).ready(function() {
+    $('#datakos').DataTable();
+    $('#tombol').click(function() {
+      alert('card sudah berhasil dimunculkan')
+      $('#wadah').show();
+
+    })
+      } );
+    </script>
+
+  </body>
+</html>
